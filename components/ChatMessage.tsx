@@ -122,6 +122,7 @@ const ChatMessage = ({
               color: 'background',
               bg: 'primary',
               whiteSpace: 'pre-wrap',
+              fontFamily: 'IBM Plex Sans',
             }}
             content={body}
             attachments={attachments}
@@ -129,7 +130,7 @@ const ChatMessage = ({
         </Flex>
         {shouldDisplayTimestamp && (
           <Flex m={1} sx={{justifyContent: 'flex-end'}}>
-            <Text sx={{color: 'gray'}}>
+            <Text sx={{color: 'gray', fontFamily: 'IBM Plex Sans'}}>
               {timestamp ? `Sent ${timestamp}` : 'Sending...'}
             </Text>
           </Flex>
@@ -148,6 +149,7 @@ const ChatMessage = ({
             color: 'text',
             bg: 'rgb(245, 245, 245)',
             whiteSpace: 'pre-wrap',
+            fontFamily: 'IBM Plex Sans',
           }}
           content={body}
           attachments={attachments}
@@ -155,7 +157,7 @@ const ChatMessage = ({
       </Flex>
       {shouldDisplayTimestamp && (
         <Flex m={1} sx={{justifyContent: 'flex-start'}}>
-          <Text sx={{color: 'gray'}}>
+          <Text sx={{color: 'gray', fontFamily: 'IBM Plex Sans'}}>
             {identifer} · Sent {timestamp}
           </Text>
         </Flex>
@@ -187,6 +189,7 @@ export const PopupChatMessage = ({message}: Props) => {
             border: '1px solid rgb(245, 245, 245)',
             boxShadow: 'rgba(35, 47, 53, 0.09) 0px 2px 8px 0px',
             maxWidth: '84%',
+            fontFamily: 'IBM Plex Sans',
           }}
           content={body}
         />

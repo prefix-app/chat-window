@@ -24,14 +24,14 @@ const CloseIcon = ({
         fill="transparent"
         strokeWidth={2}
         stroke="hsl(0, 0%, 99%)"
-        strokeLinecap="round"
+        strokeLinecap="square"
         d="M 7 7 L 20 20"
       ></path>
       <path
         fill="transparent"
         strokeWidth={2}
         stroke="hsl(0, 0%, 99%)"
-        strokeLinecap="round"
+        strokeLinecap="square"
         d="M 7 20 L 20 7"
       ></path>
     </svg>

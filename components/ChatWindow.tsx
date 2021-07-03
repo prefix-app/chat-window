@@ -1023,7 +1023,12 @@ class ChatWindow extends React.Component<Props, State> {
             <Heading
               as="h2"
               className="Papercups-heading"
-              sx={{color: 'background', my: 1, mr: 12}}
+              sx={{
+                color: 'background',
+                my: 1,
+                mr: 12,
+                fontFamily: 'IBM Plex Sans',
+              }}
             >
               {title}
             </Heading>

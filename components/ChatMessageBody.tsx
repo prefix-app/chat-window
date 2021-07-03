@@ -52,6 +52,7 @@ const ChatMessageAttachment = ({attachment}: {attachment: Attachment}) => {
         href={fileUrl}
         style={{
           textDecoration: 'underline',
+          fontFamily: 'IBM Plex Sans',
         }}
         target="_blank"
         rel="noopener noreferrer"
@@ -87,6 +88,7 @@ const ChatMessageBody = ({
       py: 2,
       borderRadius: 4,
       maxWidth: '80%',
+      fontFamily: 'IBM Plex Sans',
       p: {
         mb: 0,
       },

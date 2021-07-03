@@ -85,7 +85,10 @@ const ChatFooter = ({
         {shouldRequireEmail && (
           <Box py={1} sx={{borderBottom: '1px solid rgb(230, 230, 230)'}}>
             <Input
-              sx={{variant: 'styles.input.transparent'}}
+              sx={{
+                variant: 'styles.input.transparent',
+                fontFamily: 'IBM Plex Sans',
+              }}
               placeholder={emailInputPlaceholder}
               value={email}
               onChange={handleEmailChange}
@@ -99,7 +102,7 @@ const ChatFooter = ({
           <Box mr={2} sx={{flex: 1}}>
             <ResizableTextArea
               sx={{
-                fontFamily: 'body',
+                fontFamily: 'IBM Plex Sans',
                 color: 'input',
                 variant: 'styles.input.transparent',
               }}
@@ -155,7 +158,7 @@ const ChatFooter = ({
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                borderRadius: '50%',
+                borderRadius: '3px',
                 height: '36px',
                 width: '36px',
                 padding: 0,
